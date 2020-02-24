@@ -1,0 +1,32 @@
+\usepackage{kotex}
+\setmainfont{NanumGothic}
+\setmainhangulfont{NanumGothic}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{tikz}
+
+% Graphics
+\graphicspath{{graph/}}
+\def\full#1{\vspace*{0.2cm}\par\centerline{\includegraphics[height=8.2cm,width=12.8cm,keepaspectratio=true]{#1}}}
+
+\usepackage{multicol}
+
+% Figure placement using textpos
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+\def\placefig#1#2#3#4{\begin{textblock}{.1}(#1,#2)\rlap{\includegraphics[#3]{#4}}\end{textblock}}
+
+
+
+\def\maxwidth{\linewidth}
+\def\maxheight{1\textheight}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+

@@ -1,0 +1,33 @@
+---
+title: "latex option or Grphicspath is not working"
+author: "John Dow"
+date: '2020 2 24 '
+output:
+  beamer_presentation:
+    keep_tex: true
+    latex_engine: xelatex
+    theme: "metropolis"
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    slide_level: 2
+    toc: TRUE
+    includes:
+      in_header: preamble.tex    
+      
+classoption: "aspectratio=169"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+- This is to test my beamer.
+
+
+```{r}
+knitr::include_graphics("testimage.png")
+```
+
